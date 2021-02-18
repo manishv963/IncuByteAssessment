@@ -1,0 +1,14 @@
+package StringCalculator.Calculator;
+
+public class TestStringCalculator {
+
+	
+	@Test
+	void TestEmptyString() throws Exception {
+	String input = "";
+	StringCalculator calculator = new StringCalculator();
+	int result  = calculator.add(input);
+	assertEquals(0, result);
+	
+	}
+}

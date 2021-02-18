@@ -1,0 +1,18 @@
+package StringCalculator.Calculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class TestStringCalculator {
+
+	
+	@Test
+	void TestEmptyString() throws Exception {
+	String input = "";
+	StringCalculator calculator = new StringCalculator();
+	int result  = calculator.add(input);
+	assertEquals(0, result);
+	
+	}
+}
