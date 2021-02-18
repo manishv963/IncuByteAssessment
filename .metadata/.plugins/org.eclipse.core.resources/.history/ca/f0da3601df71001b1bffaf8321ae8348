@@ -1,0 +1,13 @@
+package StringCalculator.Calculator;
+
+import org.junit.jupiter.api.Test;
+
+public class TestStringCalculator {
+
+	
+	@Test
+	void TestEmptyString() {
+	String input = "";
+	String calculator = new StringCalculator();
+	}
+}

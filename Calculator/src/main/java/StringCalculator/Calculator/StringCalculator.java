@@ -13,7 +13,10 @@ public class StringCalculator {
 		
 		String delim = ",";
 		int result =0;
-		delim = getDelimetters(numbers);
+		String newDelim = getDelimetters(numbers);
+		if(newDelim.length() > 0 ) {
+			delim = newDelim ;
+		}
 		if(delim.contains("__")) {
 			numbers = delim.split("__")[1];
 
@@ -48,6 +51,8 @@ public class StringCalculator {
 	
 	public int performAddOperation(List<String> inputList) throws NegativeNumberException{
 		
+		
+		try {
 		if(inputList.size()  >0) {
 			System.out.println("checking for negative  numbers");
 			List<String> negativeNumbersList = (List<String>) inputList.stream()
@@ -84,7 +89,10 @@ public class StringCalculator {
 			// if the input is more than 2 number
 			return -1;
 		}
-	
+		}
+		catch(Exception e) {
+			return 0;
+		}
 	
 	}
 	

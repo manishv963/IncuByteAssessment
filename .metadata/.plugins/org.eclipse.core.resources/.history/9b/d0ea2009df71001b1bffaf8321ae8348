@@ -1,0 +1,16 @@
+package StringCalculator.Calculator;
+
+import org.junit.jupiter.api.Test;
+
+public class TestStringCalculator {
+
+	
+	@Test
+	void TestEmptyString() throws Exception {
+	String input = "";
+	StringCalculator calculator = new StringCalculator();
+	int result  = calculator.add(input);
+	
+	
+	}
+}

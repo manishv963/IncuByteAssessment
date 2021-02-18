@@ -1,0 +1,7 @@
+package StringCalculator.Calculator;
+
+import junit.framework.TestCase;
+
+public class TestStringCalculator extends TestCase {
+
+}
