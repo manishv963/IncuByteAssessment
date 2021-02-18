@@ -6,10 +6,11 @@ package StringCalculator.Calculator;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
         System.out.println( "Hello World!" );
-        int result = new StringCalculator().add("//;40;40\n2;3");
+        //int result = new StringCalculator().add("//;40;40\n2;-3");
+        int result = new StringCalculator().add("[!!!]40!!!4000");
         System.out.println("Final result" +result);
     }
 }
