@@ -1,0 +1,5 @@
+package StringCalculator.Calculator;
+
+public class NegativeNumberException {
+
+}
